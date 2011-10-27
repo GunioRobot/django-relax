@@ -25,7 +25,7 @@ performance. For more information on CouchDB compaction, consult the CouchDB
 wiki page on `compaction <http://wiki.apache.org/couchdb/Compaction>`_.
 
 .. note::
-	
+
 	The database specifiers which this command takes must be of a form
 	acceptable to :func:`relax.couchdb.get_db_string`. Consult this
 	function's documentation for more information.
@@ -33,7 +33,7 @@ wiki page on `compaction <http://wiki.apache.org/couchdb/Compaction>`_.
 This command accepts several options:
 
 .. cmdoption:: -s, --sync
-	
+
 	If this option is given, then compaction will run *synchronously*. By
 	default, a compaction process will be started on the server and then the
 	command will exit. This tells the command to keep running until the process
@@ -41,16 +41,16 @@ This command accepts several options:
 	detected by the polling of the server at regular intervals of 0.4 seconds.
 
 .. cmdoption:: -a, --compact-all
-	
+
 	If specified, this option will compact every database on the server. This
 	should be given instead of the list of databases; if some database names
 	are given, the command will compact all databases on the server anyway.
 
 .. seealso::
-	
+
 	Module :mod:`relax.couchdb.compact`
 		A module for carrying out compaction programmatically.
-	
+
 	Function :func:`relax.couchdb.get_db_string`
 		The function which processes the database specifiers.
 
@@ -77,9 +77,9 @@ Therefore, it is recommended that you consult the documentation for
 :func:`relax.couchdb.get_db_string`.
 
 .. seealso::
-	
+
 	Module :mod:`relax.couchdb.replicate`
 		A module for programmatically replicating CouchDB databases.
-	
+
 	Function :func:`relax.couchdb.get_db_string`
 		The function which processes the database specifiers.
